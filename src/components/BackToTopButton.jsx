@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import top from '../assets/img/backtotopbtn.png'
 
 import { Link, animateScroll as scroll } from 'react-scroll'
 
@@ -19,7 +20,10 @@ const BackToTopButton = () => {
         scroll.scrollToTop();
     }
     
-    return (show && <button onClick={() => scrollToTop()} className='bg-blue-700 w-12 h-12 hover:bg-blue-300 text-white rounded-full fixed right-24 bottom-24 cursor-pointer flex justify-center items-center transition-all' ><ChevronUpIcon className='w-6 h-6' /></button>)
+    return (show && <img className=' fixed right-24 bottom-24 cursor-pointer flex justify-center items-center transition-all' onClick={() => scrollToTop()} src={top} />
+    // <button onClick={() => scrollToTop()} className='bg-blue-700 w-12 h-12 hover:bg-blue-300 text-white rounded-full fixed right-24 bottom-24 cursor-pointer flex justify-center items-center transition-all' ><ChevronUpIcon className='w-6 h-6' /></button>
+    
+    )
 
   
 }

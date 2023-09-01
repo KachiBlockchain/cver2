@@ -42,10 +42,10 @@
     @apply text-blue-700;
   }
   .footer-text {
-    @apply text-white text-[24px]
+    @apply text-white text-[14px]
   }
   .black-footer-text {
-    @apply text-black text-[24px]
+    @apply text-black text-[14px]
   }
   .bold-text{
     @apply font-extrabold text-[30px] text-black px-4 py-4

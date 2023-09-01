@@ -16,22 +16,38 @@ const Login = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/dashboard");
+      navigate("dashboard/home" , { replace: true });
     } catch (err) {
       setError(err.message);
       alert(err.message);
     }
   };
 
+
   const handleGoogleSignIn = async (e) => {
     e.preventDefault();
     try {
       await googleSignIn();
-      navigate("/dashboard");
+      console.log('Successfully signed in'); // Add a log statement for debugging
+      navigate('/dashboard/home', { replace: true });
     } catch (error) {
-      console.log(error.message);
+      console.error('Error during sign-in:', error); // Add an error log for debugging
     }
   };
+
+
+
+
+
+  // const handleGoogleSignIn = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     await googleSignIn();
+  //     navigate("dashboard", { replace: true });
+  //   } catch (error) {
+  //     console.log(error.message);
+  //   }
+  // };
   return (
     <div className="flex bg-signbg bg-no-repeat bg-cover flex-col lg:flex-row items-center justify-center gap-16 py-[100px]">
       <div className="max-w-[500px] basis-[50%]">

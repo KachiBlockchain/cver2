@@ -14,18 +14,18 @@ const Contact = () => {
             data-aos="fade-right"
             data-aos-duration="2000"
             data-aos-delay="900"
-            className="flex-1 flex flex-col justify-center items-center lg:items-start"
+            className="flex-1 flex flex-col justify-center items-start lg:items-start"
           >
-            <h1 className="text-[40px] flex justify-start leading-[44px] text-black md:text-[60px] md:leading-tight lg:text-[40px] lg:leading-[1.2] font-bold md:tracking-[-2px]">
+            <h1 className="text-[30px] flex justify-start leading-[34px] text-black md:text-[60px] md:leading-tight lg:text-[40px] lg:leading-[1.2] font-bold md:tracking-[-2px]">
               Open doors today, with your tailored resume
             </h1>
-            <p className="text-black max-w-[480px] text-[24px] p-4 text-center lg:text-left lg:leading-[1.2]">
+            <p className="text-black max-w-[480px] text-[14px] p-4 text-start lg:text-left lg:leading-[1.2]">
               Craft a tailored CV with our AI Resume Builder that impresses
               recruiters and lands you exciting opportunities. Unleash your
               potential and secure the job you deserve!"
             </p>
             <Link to="/login">
-              <button className="btn btn-md my-8 bg-blue-800 rounded-[10px] hover:bg-blue-400 md:btn-lg transition-all ">Create my resume
+              <button className="btn btn-md my-8 bg-[#3171ED] rounded-[10px] hover:bg-blue-400 md:btn-lg transition-all ">Create my resume
               </button>
             </Link>
           </div>

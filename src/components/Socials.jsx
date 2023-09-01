@@ -37,20 +37,7 @@ const Socials = () => {
               <img src={user.photoURL} className="rounded-full" alt="" />
             </div>
             {open && (
-              // <div className="bg-blue-100 items-center justify-center flex flex-col border h-[120px] w-[150px] absolute bottom-[-135px] z-20 right-0 p-[20px] space-y-[10px]">
-              //   <p className="cursor-pointer hover:text-[blue] font-semibold ">
-              //     Profile
-              //   </p>
-              //   <p className="cursor-pointer hover:text-[blue] font-semibold ">
-              //     Settings
-              //   </p>
-              //   <p
-              //     onClick={handleLogout}
-              //     className="cursor-pointer hover:text-[blue] font-semibold "
-              //   >
-              //     Log out
-              //   </p>
-              // </div>
+              
 
               <div className="relative inline-block group">
                 <div className="absolute top-[60px] -left-[300px] flex flex-col  bg-white border border-gray-300 shadow-md p-8 rounded-md items-center justify-center ">
@@ -68,7 +55,7 @@ const Socials = () => {
                       {user.email}
                     </li>
                     <li className="hover:bg-gray-100 px-3 py-2 cursor-pointer">
-                    <Link to="/dashboard">Dashboard </Link>
+                    <Link to="/dashboard/home">Dashboard </Link>
                     </li>
                     <li
                       onClick={handleLogout}
@@ -83,18 +70,18 @@ const Socials = () => {
           </div>
         </>
       ) : (
-        <>
+        <div className=" flex items-center justify-center flex-col md:flex-row gap-8">
           <Link to="/login">
-            <button className="btn text-blue-400 hover:text-white border-2 border-blue-500 rounded-xl flex justify-center items-center">
-              Login
+            <button className="btn text-[#3171ED] w-[300px] md:w-[126px] md:h-[45px] hover:text-white border-2 border-[#3171ED] rounded-md flex justify-center items-center">
+              Log in
             </button>
           </Link>
           <Link to="/login">
-            <button className="btn  flex justify-center bg-blue-800 rounded-xl items-center text-white">
+            <button className="btn createmyresumebtn  flex justify-center w-[300px] md:w-[210px] md:h-[45px] bg-[#3171ED] rounded-md items-center text-white">
               Create my resume
             </button>
           </Link>
-        </>
+        </div>
       )}
     </div>
   );

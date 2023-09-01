@@ -1,11 +1,9 @@
 //  icons
 import {
   FiLinkedin,
-  FiYoutube,
-  FiInstagram,
   FiTwitter,
-  FiFacebook
-  
+  FiFacebook,
+  FiChevronDown  
 } from "react-icons/fi";
 
 import TestiImage1 from './assets/img/girl.png'
@@ -24,10 +22,12 @@ export const navigation = [
   {
     name: "Services",
     href: "services",
+    icon: <FiChevronDown />,
   },
   {
     name: "Templates",
     href: "contact",
+    icon: <FiChevronDown />,
   },
   {
     name: "Pricing",
@@ -46,15 +46,7 @@ export const social = [
     href: "",
   },
   {
-    icon: <FiInstagram />,
-    href: "",
-  },
-  {
     icon: <FiLinkedin />,
-    href: "",
-  },
-  {
-    icon: <FiYoutube />,
     href: "",
   },
 ];

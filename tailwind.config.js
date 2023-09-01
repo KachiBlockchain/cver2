@@ -2,9 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: "'Exo', sans-serif;",
-      body: 'Exo',
-    },
+      primary: "'Nunito', sans-serif;",
+      body: "'Poppins', sans-serif;",
+    },   
     container: {
       padding: {
         DEFAULT: '1rem',
@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         nav: "url('/src/assets/img/nav.png')",
+        ham: "url('/src/assets/img/Hamburger Menu.png')",
         signbg: "url('/src/assets/img/Signupbg.png')",
         sidebarbg: "url('/src/assets/img/sidebarBg.png')",
         bg: "url('/src/assets/img/bg.png')",
